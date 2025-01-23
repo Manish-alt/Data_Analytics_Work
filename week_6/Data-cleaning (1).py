@@ -25,6 +25,9 @@ cleaned_data = iris_df.dropna(how="all", inplace=True) # remove any empty lines
 iris_X=iris_df.iloc[:5,[0,1,2,3]]
 print(iris_X)
 
+correlation_matrix = iris_df.iloc[:,:-1].corr()
+print("Correlation matrix:\n", correlation_matrix)
+
 ### TASK2: Here - Write a short readme to explain above code and how we can calculate the corrolation amoung featuers with description
 
 # README: Iris Dataset Analysis
